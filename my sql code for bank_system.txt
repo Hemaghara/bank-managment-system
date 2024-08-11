@@ -1,0 +1,13 @@
+create table bank_system1
+(account_number int(10) primary key not null,
+holder_name varchar(25),
+holder_email varchar(35),
+holder_address_city varchar(25),
+holder_address_village varchar(25),
+holder_password int(4),
+holder_balance float(40) not null,
+deposit_entry int(40)not null,
+deposit_time timestamp default current_timestamp,
+credit_entry int(40),
+credit_time timestamp default current_timestamp);
+insert into bank_system1(account_number,holder_name,holder_email,holder_address_city,holder_address_village,holder_password,holder_balance,deposit_entry,credit_entry) values(101,"hem","hemaghara","morbi","jetpar",3429,1230.00,500,900);
